@@ -1,0 +1,27 @@
+.icon{
+  width: 32px;
+  height: 32px;
+  display: block;
+  background-size: cover;
+
+  @include hover(transform, scale(1.2));
+
+  &--menu{
+    background-image: url(../images/icon-menu.svg);
+
+
+    @include on-tablet{
+      display: inline-block;
+    }
+
+    @include on-desctop{
+      display: none;
+    }
+  }
+
+  &--close{
+    background-image: url(../images/close.svg);
+    width: 24px;
+    height: 24px;
+  }
+}

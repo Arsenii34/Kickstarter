@@ -1,0 +1,59 @@
+.nav{
+  &__item{
+    list-style: none;
+  }
+  &__link{
+    list-style: none;
+    color: $black-33;
+    text-decoration: none;
+
+    &:hover{
+      @include font-style(Roboto, 14px, 700, 20px);
+      color:  $color-blak--13;
+    }
+  }
+  &__list{
+   padding: 0;
+   @include font-style(Roboto, 14px, 400, 20px);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 25px;
+
+   @include on-tablet{
+    gap: 40px;
+   }
+  }
+
+  &__button{
+    width: 260px;
+    height: 48px;
+    color: #fff;
+    background-color: $black-33;
+    display: inline-block;
+    margin-top: 162px;
+
+   @include hover(transform, scale(1.2));
+
+   &:hover{
+    background-color: $color-blak--13;
+   }
+   &:disabled {
+    background-color: $do-blue;
+   }
+   @include on-tablet{
+    display: none;
+   }
+  }
+
+  &__block{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+
+    @include on-tablet{
+      display: none;
+    }
+  }
+}

@@ -1,19 +1,137 @@
 <!doctype html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <link
+     rel="icon"
+     href="../src/images/favicon2.png"
+     type="image/png"
+    >
+    <title>Futuristic Wireless Speaker</title>
     <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page_body">
     <script src="scripts/main.js"></script>
+    <header class="header">
+      <div class="header__content">
+        <div class="top-bar">
+          <a class="top-bar__logo-link" href="#">
+            <img src="../src/images/logo.png"
+              alt="logo"
+              class="top-bar__logo"
+            >
+          </a>
+          <div class="top-bar__icon">
+
+            <a
+              href="#info"
+              class="header__link">SPECS
+            </a>
+
+            <div class=" switch">
+              <button class="switch__button" data-lang="en">EN</button>
+              <span class="switch__divider">/</span>
+              <button class="switch__button" data-lang="uk">UK</button>
+            </div>
+
+
+            <button class="top-bar__button">
+              BUY
+            </button>
+
+            <a
+             class="icon icon--menu"
+             href="#menu"
+                     ></a>
+          </div>
+
+
+        </div>
+        <div class="header__bottom">
+
+          <div class="header__text">
+            <h1 class="header__head--line">
+                Futuristic<br>
+               Wireless<br>
+              Speaker
+            </h1>
+
+            <h2 class="header__bottom--titel">
+              Luna's performance is balanced<br>
+              and smooth in all frequency<br>
+              ranges which makes the music<br>
+              both naturally pleasant and<br>
+              distinctly more layered.
+            </h2>
+          </div>
+          <div class="header__photo">
+
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <aside
+      class="page__menu menu"
+      id="menu">
+      <div class="container">
+        <div class="top-bar menu__top">
+          <a class="top-bar__logo-link" href="#">
+            <img src="../src/images/logo.png"
+              alt="logo"
+              class="top-bar__logo"
+            >
+          </a>
+          <div class="menu__icon">
+            <a class="icon icon--close"href="#"></a>
+          </div>
+        </div>
+        <nav class="nav menu__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#history">OUR STORY</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about-us">ABOUT US</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#features">FEATURES</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">GET IN TOUCH</a>
+            </li>
+          </ul>
+          <div class="nav__block">
+            <a
+              href="#info"
+              class="header__link">SPECS
+            </a>
+
+            <div class="switch">
+              <button class="switch__button" data-lang="en">EN</button>
+              <span class="switch__divider">/</span>
+              <button class="switch__button" data-lang="uk">UK</button>
+            </div>
+          </div>
+          <button class="nav__button">BUY</button>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="history" id="history"></section>
+      <section class="about-us" id="about-us"></section>
+      <section class="features" id="features"></section>
+      <section class="contact" id="contact"></section>
+    </main>
   </body>
 </html>

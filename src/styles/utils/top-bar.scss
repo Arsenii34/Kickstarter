@@ -1,0 +1,85 @@
+.top-bar{
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 25px;
+
+  @include on-tablet{
+    padding-block: 30px;
+  }
+
+  &__logo{
+    @include hover(transform, scale(1.2));
+
+    height: 26px;
+    &--link{
+      display: flex;
+    }
+   }
+
+   &__icon{
+    display: flex;
+    gap:  30px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+   }
+
+   &__button{
+    color: #fff;
+    background-color: $black-33;
+    min-width: 100px;
+    min-height: 48px;
+    display: none;
+
+   @include hover(transform, scale(1.2));
+
+   @include on-desctop{
+    width: 102px;
+    height: 48px;
+    display: inline-block;
+   }
+
+   @include on-tablet{
+    display: inline-block;
+   }
+
+   &:hover{
+    background-color: $color-blak--13;
+   }
+   &:disabled {
+    background-color: $do-blue;
+   }
+   }
+}
+.switch{
+  display: flex;
+  gap: 3px;
+  width: 53px;
+  height: 20px;
+
+
+  @include on-tablet{
+    display: inline-block;
+  }
+  @include on-desctop{
+    display: inline-block;
+  }
+
+  &__button{
+    width: 19px;
+    height: 20px;
+    border: none;
+    padding: 0;
+  }
+
+  &__divider{
+    width: 6px;
+    height: 20px;
+    margin-inline: 1px;
+  }
+
+
+ }
+
