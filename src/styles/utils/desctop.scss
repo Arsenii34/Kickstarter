@@ -1,0 +1,32 @@
+.menu--desctop{
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    color: $black-33;
+    text-decoration: none;
+    list-style: none;
+
+    &:hover {
+      color: $color-blak--13;
+
+      @include font-style(Roboto, 14px, 700, 20px);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+
+    padding: 0;
+
+    @include font-style(Roboto, 14px, 400, 20px);
+
+    @include on-tablet {
+      gap: 40px;
+    }
+  }
+
+}

@@ -1,7 +1,7 @@
 .icon{
+  display: block;
   width: 32px;
   height: 32px;
-  display: block;
   background-size: cover;
 
   @include hover(transform, scale(1.2));
@@ -20,8 +20,8 @@
   }
 
   &--close{
-    background-image: url(../images/close.svg);
     width: 24px;
     height: 24px;
+    background-image: url(../images/close.svg);
   }
 }

@@ -1,32 +1,38 @@
 .page{
   scroll-behavior: smooth;
-  background-color: $f7-blue;
+
 
   &__menu{
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-
     cursor: none;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     transform: all  $effectDuration;
     transform: translateX(-100%);
 
+    opacity: 0;
     &:target{
-      opacity: 1;
       pointer-events: all;
       transform: translateX(0);
+      opacity: 1;
     }
   }
-  &:has(#menu:target){
+   &:has(#menu:target){
     overflow: hidden;
    }
 
    &__body{
     margin: 0;
+    background-color: $color;
    }
 }
+
 .container{
   @include padding;
+}
+
+body{
+  background-color: $color;
 }

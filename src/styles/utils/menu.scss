@@ -1,19 +1,18 @@
-.menu{
+.menu {
   @include padding;
   @include font-style(Roboto, 14px, 400, 20px);
 
-  background-color: $menu-color;
   width: 100%;
   height: 100vh;
+  background-color: $menu-color;
 
-
-  &__icon{
+  &__icon {
+    display: block;
     min-width: 32px;
     min-height: 32px;
-    display: block;
   }
 
-  &__top{
+  &__top {
    margin-bottom: 0;
   }
 

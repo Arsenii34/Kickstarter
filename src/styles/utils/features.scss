@@ -1,0 +1,8 @@
+.features{
+  @include page-grid;
+
+  @include on-desctop{
+    flex-direction: row;
+    gap: 30px;
+  }
+}
