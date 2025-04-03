@@ -5,4 +5,56 @@
     flex-direction: row;
     gap: 30px;
   }
+
+
+  &__item{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    @include on-tablet{
+      display:  inline-block;
+      grid-column: span 4;
+    }
+
+    @include on-desctop{
+      display: flex;
+      grid-column: span 3;
+    }
+  }
+
+  &__text{
+    @include font-style (Roboto, 14px, 400, 20px);
+  }
+
+  &__head-line{
+    @include font-style(Roboto, 22px, 700, 28px);
+  }
+
+  &__img{
+    @include on-tablet{
+      width: 50px;
+      height: 40px;
+    }
+
+    @include on-desctop{
+      width: 70px;
+      height: 50px;
+    }
+  }
+
+  &__design{
+    display: block;
+    
+    grid-column: 1 / -1;
+
+    @include on-tablet{
+     margin-top: 0;
+     grid-column: span 4;
+    }
+
+    @include on-desctop{
+      grid-column: span 3;
+    }
+   }
 }

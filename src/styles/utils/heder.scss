@@ -85,13 +85,18 @@
  }
 
  &__link{
-  @include font-style(Roboto, 14px, 300, 100%);
+  display: none;
 
+  @include font-style(Roboto, 14px, 300, 100%);
   @include hover(transform, scale(1.2));
 
   cursor: pointer;
   color: $blue-4f;
   text-decoration: none;
+
+  @include on-tablet{
+   display: inline-block
+  }
 
   @include on-desctop{
     @include font-style(Roboto, 14px, 400, 20px);
