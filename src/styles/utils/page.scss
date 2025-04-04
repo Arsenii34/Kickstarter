@@ -49,25 +49,27 @@ body{
 
 .img-2{
   grid-column: 1 / -1;
+
   object-fit: contain;
   background-image: url(../images/image-2-moobile.png);
   background-position: center;
   background-size: cover;
 
   @include on-tablet{
+    height: 430px;
     margin-top: 140px;
     padding-top: 140px;
-    height: 430px;
     background-image: url(../images/image-2-tablet.png);
 
 
   }
 
   @include on-desctop{
-    margin-top: 170px;
-    padding-top: 170px;
     min-width: 846px;
     height: 520px;
+    margin-top: 170px;
+    padding-top: 170px;
+
     background-image: url(../images/image-desctop.png);
   }
 }
