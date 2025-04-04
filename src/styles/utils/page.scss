@@ -31,6 +31,16 @@
 
 .container{
   @include padding;
+
+  &-2{
+    @include page-grid;
+
+
+
+    width: 300px;
+    height: 200px;
+
+  }
 }
 
 body{
@@ -38,29 +48,26 @@ body{
 }
 
 .img-2{
-  @include padding;
+  grid-column: 1 / -1;
+  object-fit: contain;
+  background-image: url(../images/image-2-moobile.png);
   background-position: center;
   background-size: cover;
-  object-fit: contain;
-  height: 200px;
-  width: 300px;
-  padding-top: 110px;
-  margin-top: 110px;
-
-  background-image: url(../images/image-2-moobile.png);
 
   @include on-tablet{
-    background-image: url(../images/image-2-tablet.png);
-    height: 430px;
+    margin-top: 140px;
     padding-top: 140px;
+    height: 430px;
+    background-image: url(../images/image-2-tablet.png);
+
 
   }
 
   @include on-desctop{
-    background-image: url(../images/image-desctop.png);
-    height: 520px;
-    width: 846px;
+    margin-top: 170px;
     padding-top: 170px;
-
+    min-width: 846px;
+    height: 520px;
+    background-image: url(../images/image-desctop.png);
   }
 }

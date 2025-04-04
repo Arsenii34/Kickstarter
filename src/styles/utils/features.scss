@@ -10,8 +10,8 @@
   &__item{
     display: none;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    place-items: center;
+
     @include on-tablet{
       display:  inline-block;
       grid-column: span 4;
@@ -45,12 +45,11 @@
 
   &__design{
     display: block;
-    
     grid-column: 1 / -1;
 
     @include on-tablet{
+      grid-column: span 4;
      margin-top: 0;
-     grid-column: span 4;
     }
 
     @include on-desctop{

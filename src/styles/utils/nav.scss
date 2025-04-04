@@ -10,6 +10,7 @@
 
     &:hover {
       @include hover(transform, scale(1.2));
+      
             color: $color-blak--13;
 
       @include font-style(Roboto, 14px, 700, 20px);

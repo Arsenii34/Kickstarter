@@ -85,12 +85,12 @@
  }
 
  &__link{
+  cursor: pointer;
   display: none;
 
   @include font-style(Roboto, 14px, 300, 100%);
   @include hover(transform, scale(1.2));
 
-  cursor: pointer;
   color: $blue-4f;
   text-decoration: none;
 

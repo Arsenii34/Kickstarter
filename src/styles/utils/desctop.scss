@@ -10,6 +10,7 @@
 
   &__item {
     list-style: none;
+
     @include hover(transform, scale(1.2));
   }
 
@@ -29,6 +30,7 @@
     flex-direction: row;
     gap: 84px;
     justify-content: center;
+
     padding: 0;
 
     @include font-style(Roboto, 14px, 400, 20px);
